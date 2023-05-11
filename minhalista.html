@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/imagens/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' >
+<link rel="stylesheet" href="/css/home.css">
+  <title>StreamCult-Home</title>
+</head>
+<body>
+  <div class="nav" id="nav">
+    <a href="home.html"><img class="nav__logo" src="/imagens/1-semfundo.png" alt="logo-streamcult"></a>
+    <img class="nav__avatar" src="/imagens/avatar.png" alt="avatar">
+  </div>
+
+
+
+   
+</div>
+    <div class="banner-mylist">
+</div>
+
+
+<div class="row">
+<h2>Minha Lista</h2>
+<div class="row__posters">
+
+  <img class="row__poster row__posterLarge" src="/imagens/banner-large.jpg" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-large1.jpg" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-3.webp" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-4.jpg" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-5.webp" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-6.jpg" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-7.jpg" alt="banner-fleabag"/>
+  <img class="row__poster row__posterLarge" src="/imagens/banner-8.jpg" alt="banner-fleabag"/>
+</div>
+</div>
+
+<!--adicionando uma classe ao objeto id pra aparecer uma barra branca no fundo da logo/icone quando rolar a pagina-->
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+if(window.scrollY >= 80) {
+nav.classList.add('nav__black')
+
+} else {
+  nav.classList.remove('nav__black');
+}
+
+  })
+</script>
+</body>
+</html>
