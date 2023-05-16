@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
 *, *:before, *:after {
     box-sizing: border-box;
   }
+
+  *{
+    font-family: 'Open Sans', sans-serif;
+  }
+
   
   html {
     overflow-y: scroll;
@@ -10,42 +18,46 @@
     background: #ffffff;
     font-family: 'Titillium Web', sans-serif;
   }
-  #play{
-    
+
+  article{
+    margin-top: -350px;
+    text-align: center;
+    color: white;
+  }
+
+
+  nav > #play{
     width: 110px;
     text-align: center;
     height: 30px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 5px 1px;
-    
+    color: white;
+}
+  
+  nav > img {
+    background-color: white;
+  }
 
-}
-#play:hover{
-    width: 120px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 1px 1px 1px;
-
-}
-#img-play{
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-}
 #player-wick-a{
     color: black;
     margin: auto;
+    
 }
-  
-  a {
-    text-decoration: none;
-    color: #1ab188;
-    transition: .5s ease;
+
+  .wick-background{
+  background-image: url(./imagens/John-Wick-Chapter-4-Laptop-Wallpaper.jpg);
+  background-size:cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 100%;
   }
-  a:hover {
-    color: #179b77;
+  
+
+  nav > a{
+    color: white;
+    text-decoration: none;
   }
   
   .nav__logo {
@@ -54,6 +66,7 @@
    
     
   }
+  /* avatar do usuário */
   .nav__avatar {
     width: 70px;
     object-fit: contain;
@@ -70,61 +83,8 @@
    transition: all 0.5s; 
    
 }
-.banner img {
-    max-width: 25%;
-    position: absolute; /* para que a imagem fique em posição absoluta */
-    top: 50%; /* para centralizar verticalmente */
-    left: 50%; /* para centralizar horizontalmente */
-    transform: translate(-50%, -50%); /* para ajustar a posição central */
-  }
-  
-  
-  
-  
-  .banner {
-    background-image: url('../imagens/theofficebanner.jpg');
-    background-size:cover;
-    background-position: center center;
-    color: white;
-    object-fit: contain;
-    height: 750px;
-  }
-  .banner__contents {
-    margin-left: 30px;
-    padding-top: 140px;
-    height: 190px;
-  }
-  .banner__title {
-    color: black;
-    font-size: 4rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
-  padding-top: 5rem;
-  }
-  .banner-description {
-    text-align: left;
-    color: black;
-    width: 50rem;
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 1.1rem;
-    max-width: 360px;
-    height: 180px;
-  }
-  .banner__button {
-    cursor: pointer;
-    color: white;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    margin-top: 350px;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    margin-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color:#1ab188;
-  }
+
+
   .banner__button:hover {
     color:white;
     background-color: #179b77;
@@ -134,11 +94,6 @@
     margin-top: 200px;
     height: 5rem;
   
-  }
-  .banner--fadeBottom {
-  margin-top: 450px;
-  height: 7.4rem;
-  background-image: linear-gradient(180deg, rgba(246, 246, 246, 0) 0%, rgba(246, 246, 246, 1) 90%);
   }
 .row__poster {
     width: 100%;
@@ -166,16 +121,7 @@
       transform: scale (2.09)
     
     }
-    .row {
-    color: black;
-    margin-left: 10px;
     
-    }
-    .row h2 {
-      margin-top: 50px;
-    margin-left: 20px;
-    
-    }
     /*configura barra de rolagem*/
     .row__posters::-webkit-scrollbar {
       display: none;
