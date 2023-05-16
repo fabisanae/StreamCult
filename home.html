@@ -32,21 +32,19 @@
     </div>
     <h2 class="banner-description">
       A trama é centrada em torno do gerente da filial, Michael Scott, que tenta ser amigo de seus funcionários enquanto administra a empresa de forma peculiar. A série segue a vida de personagens como Jim Halpert, Pam Beesly, Dwight Schrute, Angela Martin, Kevin Malone, e muitos outros enquanto lidam com o cotidiano no ambiente de trabalho.
-    </h2>
+          </h2>
 
                
 </div>
     <div class="banner--fadeBottom">
 </div>
 </header>
-<br>
-<br>
+<br><br>
 <div id="div-pesquisa">
   <input type="search" name="pesquisar" id="pesquisar" placeholder="Procure aqui suas séries e filmes">
   <img id="lupa" src="./imagens/pngwing.com.png" alt="">
 
 </div>
-
 <div class="row">
 <h2>Populares</h2>
 <div class="row__posters">
@@ -141,25 +139,5 @@ nav.classList.add('nav__black')
 
   })
 </script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-
-    var posters = document.getElementsByClassName('row__poster');
-
-
-    for (var i = 0; i < posters.length; i++) {
-      var poster = posters[i];
-      var link = document.createElement('a');
-      link.href = 'wick.html'; 
-
-
-      var parent = poster.parentNode;
-      parent.replaceChild(link, poster);
-
-
-      link.appendChild(poster);
-    }
-  });
-  </script>
 </body>
 </html>
